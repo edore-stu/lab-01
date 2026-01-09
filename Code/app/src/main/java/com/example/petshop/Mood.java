@@ -4,7 +4,11 @@ import java.util.Date;
 
 public abstract class Mood {
     private String currentMood;
-    private Date moodDate;
+
+    public Mood(String currentMood){
+        this.currentMood = currentMood;
+    }
 
 
+    public abstract String moodString();
 }
